@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#id_card_landscape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sky_blue_id_card {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.landscape_card {
+    width: 35rem;
+    height: 25rem;
+    padding: 1.5rem;
+    /* background-color: skyblue; */
+}
+
+
+.id_card_frontend .frontend_upper_side {
+    display: flex;
+    gap: 2rem;
+}
+
+.id_card_frontend .frontend_upper_side .logo img {
+    height: 8rem;
+    width: 8rem;
+}
+
+.names {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.names hr {
+    margin-top: 0.81rem;
+    background: rgb(86, 178, 214);
+    height: 10px;
+    border-color: transparent;
+}
+
+.id_card_frontend .frontend_middle_side {
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.id_card_frontend .frontend_middle_side .person_image {
+    border: 0.3rem solid white;
+    height: 10rem;
+    width: 9.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+.id_card_frontend .frontend_middle_side .person_image img {
+    position: absolute;
+    height: 9rem;
+    width: 9rem;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.id_card_frontend .frontend_middle_side .student_details {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    gap: 0.51rem;
+}
+
+.id_card_frontend .frontend_middle_side .student_details .details_heading {
+    color: rgb(236, 52, 83);
+}
+
+.id_card_frontend .frontend_middle_side .student_details div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.id_card_frontend .frontend_bottom_side {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.id_card_backend .backend_top_side .details {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.id_card_backend .devider {
+    border: transparent;
+    background-color: rgb(86, 178, 214);
+    height: 0.2rem;
+    margin: 1rem 0;
+}
+
+.id_card_backend .rightful_owner_text {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+}
+
+.id_card_backend .backend_bottom_side {
+    display: flex;
+    justify-content: space-between;
+}
+
+.id_card_backend .backend_bottom_side .contact_data div {
+    margin-top: 0.3rem;
+
+}
+
+.id_card_backend .backend_bottom_side .contact_data div a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.8rem;
+    color: black;
+}
+
+.text-cyan{
+    color: #005a5a !important;
+}
+.text-pink{
+    color: #fb002c !important;
+}
+
+.id_card_backend .backend_bottom_side .bottom_qr_code img{
+    width: 6rem;
+}
+
+.id_card_frontend{
+    position: relative;
+    z-index: 5;
+   
+}
+.id_card_frontend::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    background-size: 100 100;
+    background-image: url("./images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.id_card_frontend::after{
+    content: '';
+    z-index: -4;
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+}
+.id_card_backend{
+    position: relative;
+    z-index: 5;
+   
+}
+.id_card_backend::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    background-size: 100 100;
+    background-image: url("./images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.id_card_backend::after{
+    content: '';
+    z-index: -4;
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+}
